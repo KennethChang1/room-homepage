@@ -1,0 +1,92 @@
+@import './reset';
+
+.header{
+    background-image: url('../images/mobile-image-hero-1.jpg');
+    height: 22.5em;
+    position: relative;
+    margin-bottom: 60px;
+
+    &__nav{
+        padding: 48px 0 0 24px;
+    }
+
+    &__slider{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: black;
+        width: 112px;
+        height: 56px;
+    }
+}
+
+.nav-links{
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 47px 23px;
+    background-color: white;
+    transition: transform .5s ease;
+
+    &-active{
+        transform: translateY(0);
+    }
+}
+
+
+.logo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.card{
+    width: 311px;
+    margin: auto;
+    font-family: 'League Spartan', sans-serif;
+
+    &--top{
+        margin-bottom: 72px;
+    }
+
+    &--btm{
+        margin-bottom: 41px;
+    }
+
+    &__title{
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 36px;
+        letter-spacing: -2px;
+        margin-bottom: 15px;
+    }
+
+    &__header{
+        font-weight: 700;
+        letter-spacing: 6px;
+        margin-bottom: 15px;
+    }
+
+    &__copy{
+        font-weight: 500;
+        line-height: 22px;
+        color: #A0A0A0;
+    }
+}
+
+.section{
+    &__image{
+        width: 100%;
+
+        &--dark{
+            margin-bottom: 49px;
+        }
+    }
+}
